@@ -66,6 +66,12 @@ void Stock::sell(long num, double price)
 	return;
 }
 
+void Stock::update(double price)
+{
+	share_val = price;
+	set_tot();
+}
+
 void Stock::show()
 {
 	using std::cout;
