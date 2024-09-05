@@ -40,12 +40,12 @@ void AcctABC::Deposit(double amt)
     return;
 }
 
-void AcctABC::Withdraw(double amt)
-{
-    balance -= amt;
+// void AcctABC::Withdraw(double amt)
+// {
+//     balance -= amt;
 
-    return;
-}
+//     return;
+// }
 
 void Brass::ViewAcct()const
 {
