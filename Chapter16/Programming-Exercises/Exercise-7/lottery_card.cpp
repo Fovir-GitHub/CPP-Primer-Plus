@@ -22,5 +22,8 @@ std::vector<int> Lotto(int number_of_spot, int spots)
     std::iota(temp.begin(), temp.end(), 1);
     std::random_shuffle(temp.begin(), temp.end());
 
-    return std::vector<int>(temp.begin(), temp.begin() + spots);
+    std::vector<int> result(temp.begin(), temp.begin() + spots);
+    std::sort(result.begin(), result.end());
+
+    return result;
 }
