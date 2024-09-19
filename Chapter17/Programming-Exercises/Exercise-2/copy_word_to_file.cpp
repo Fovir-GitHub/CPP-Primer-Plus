@@ -1,7 +1,6 @@
 #include<iostream>
 #include<fstream>
 #include<cstdlib>
-#include<string>
 
 int main(int argc, char * argv[])
 {
@@ -18,10 +17,10 @@ int main(int argc, char * argv[])
         std::exit(EXIT_FAILURE);
     }
 
-    std::string input;
-    std::getline(std::cin, input);
+    char ch;
 
-    fout << input;
+    while (std::cin.get(ch) && !std::cin.eof())
+        fout << ch;
     fout.close();
 
     return 0;
